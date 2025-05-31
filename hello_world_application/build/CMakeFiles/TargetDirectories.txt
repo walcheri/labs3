@@ -1,0 +1,6 @@
+/home/chel/labs3/hello_world_application/build/CMakeFiles/rebuild_cache.dir
+/home/chel/labs3/hello_world_application/build/CMakeFiles/hello_world.dir
+/home/chel/labs3/hello_world_application/build/CMakeFiles/edit_cache.dir
+/home/chel/labs3/hello_world_application/build/formatter_ex/CMakeFiles/rebuild_cache.dir
+/home/chel/labs3/hello_world_application/build/formatter_ex/CMakeFiles/formatter_ex.dir
+/home/chel/labs3/hello_world_application/build/formatter_ex/CMakeFiles/edit_cache.dir
