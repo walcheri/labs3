@@ -11,14 +11,13 @@ set(CMAKE_CXX_COMPILER_ID "GNU")
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "../../formatter_ex_lib"
-  "../../formatter_lib"
-  "/home/chel/labs3/formatter_ex_lib"
-  "/home/chel/labs3/formatter_lib"
+  "/home/chel/labs3/formatter_ex_lib/../formatter_lib"
   )
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/chel/labs3/hello_world_application/build/formatter_ex/CMakeFiles/formatter_ex.dir/DependInfo.cmake"
+  "/home/chel/labs3/hello_world_application/build/formatter_ex_lib_dir/CMakeFiles/formatter_ex_lib.dir/DependInfo.cmake"
+  "/home/chel/labs3/hello_world_application/build/formatter_ex_lib_dir/formatter_lib_dir/CMakeFiles/formatter_lib.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

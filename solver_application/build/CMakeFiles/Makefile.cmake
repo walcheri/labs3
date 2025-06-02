@@ -15,6 +15,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.10.2/CMakeSystem.cmake"
   "CMakeFiles/feature_tests.c"
   "CMakeFiles/feature_tests.cxx"
+  "/home/chel/labs3/solver_lib/CMakeLists.txt"
   "/usr/share/cmake-3.10/Modules/CMakeCCompiler.cmake.in"
   "/usr/share/cmake-3.10/Modules/CMakeCCompilerABI.c"
   "/usr/share/cmake-3.10/Modules/CMakeCInformation.cmake"
@@ -112,13 +113,15 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/3.10.2/CMakeCCompiler.cmake"
   "CMakeFiles/3.10.2/CMakeCXXCompiler.cmake"
   "CMakeFiles/CMakeDirectoryInformation.cmake"
-  "formatter/CMakeFiles/CMakeDirectoryInformation.cmake"
-  "formatter_ex/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "formatter_ex_lib_dir/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "formatter_ex_lib_dir/formatter_lib_dir/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "solver_lib_dir/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/solver.dir/DependInfo.cmake"
-  "formatter/CMakeFiles/formatter.dir/DependInfo.cmake"
-  "formatter_ex/CMakeFiles/formatter_ex.dir/DependInfo.cmake"
+  "formatter_ex_lib_dir/CMakeFiles/formatter_ex_lib.dir/DependInfo.cmake"
+  "formatter_ex_lib_dir/formatter_lib_dir/CMakeFiles/formatter_lib.dir/DependInfo.cmake"
+  "solver_lib_dir/CMakeFiles/solver_lib.dir/DependInfo.cmake"
   )

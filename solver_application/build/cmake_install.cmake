@@ -39,8 +39,8 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/chel/labs3/solver_application/build/formatter/cmake_install.cmake")
-  include("/home/chel/labs3/solver_application/build/formatter_ex/cmake_install.cmake")
+  include("/home/chel/labs3/solver_application/build/formatter_ex_lib_dir/cmake_install.cmake")
+  include("/home/chel/labs3/solver_application/build/solver_lib_dir/cmake_install.cmake")
 
 endif()
 

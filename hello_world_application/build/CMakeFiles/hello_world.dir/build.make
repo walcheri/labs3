@@ -90,8 +90,8 @@ hello_world_EXTERNAL_OBJECTS =
 
 hello_world: CMakeFiles/hello_world.dir/hello_world.cpp.o
 hello_world: CMakeFiles/hello_world.dir/build.make
-hello_world: formatter_ex/libformatter_ex.a
-hello_world: /home/chel/labs3/formatter_lib/build/libformatter.a
+hello_world: formatter_ex_lib_dir/libformatter_ex_lib.a
+hello_world: formatter_ex_lib_dir/formatter_lib_dir/libformatter_lib.a
 hello_world: CMakeFiles/hello_world.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/chel/labs3/hello_world_application/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable hello_world"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/hello_world.dir/link.txt --verbose=$(VERBOSE)

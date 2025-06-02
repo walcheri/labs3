@@ -5,6 +5,3 @@ CMakeFiles/solver.dir/equation.cpp.o: ../../formatter_ex_lib/formatter_ex.h
 CMakeFiles/solver.dir/equation.cpp.o: ../../solver_lib/solver.h
 CMakeFiles/solver.dir/equation.cpp.o: ../equation.cpp
 
-CMakeFiles/solver.dir/home/chel/labs3/solver_lib/solver.cpp.o: /home/chel/labs3/solver_lib/solver.cpp
-CMakeFiles/solver.dir/home/chel/labs3/solver_lib/solver.cpp.o: /home/chel/labs3/solver_lib/solver.h
-

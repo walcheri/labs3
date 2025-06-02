@@ -124,30 +124,43 @@ solver/fast:
 .PHONY : solver/fast
 
 #=============================================================================
-# Target rules for targets named formatter
+# Target rules for targets named formatter_ex_lib
 
 # Build rule for target.
-formatter: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 formatter
-.PHONY : formatter
+formatter_ex_lib: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 formatter_ex_lib
+.PHONY : formatter_ex_lib
 
 # fast build rule for target.
-formatter/fast:
-	$(MAKE) -f formatter/CMakeFiles/formatter.dir/build.make formatter/CMakeFiles/formatter.dir/build
-.PHONY : formatter/fast
+formatter_ex_lib/fast:
+	$(MAKE) -f formatter_ex_lib_dir/CMakeFiles/formatter_ex_lib.dir/build.make formatter_ex_lib_dir/CMakeFiles/formatter_ex_lib.dir/build
+.PHONY : formatter_ex_lib/fast
 
 #=============================================================================
-# Target rules for targets named formatter_ex
+# Target rules for targets named formatter_lib
 
 # Build rule for target.
-formatter_ex: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 formatter_ex
-.PHONY : formatter_ex
+formatter_lib: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 formatter_lib
+.PHONY : formatter_lib
 
 # fast build rule for target.
-formatter_ex/fast:
-	$(MAKE) -f formatter_ex/CMakeFiles/formatter_ex.dir/build.make formatter_ex/CMakeFiles/formatter_ex.dir/build
-.PHONY : formatter_ex/fast
+formatter_lib/fast:
+	$(MAKE) -f formatter_ex_lib_dir/formatter_lib_dir/CMakeFiles/formatter_lib.dir/build.make formatter_ex_lib_dir/formatter_lib_dir/CMakeFiles/formatter_lib.dir/build
+.PHONY : formatter_lib/fast
+
+#=============================================================================
+# Target rules for targets named solver_lib
+
+# Build rule for target.
+solver_lib: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 solver_lib
+.PHONY : solver_lib
+
+# fast build rule for target.
+solver_lib/fast:
+	$(MAKE) -f solver_lib_dir/CMakeFiles/solver_lib.dir/build.make solver_lib_dir/CMakeFiles/solver_lib.dir/build
+.PHONY : solver_lib/fast
 
 equation.o: equation.cpp.o
 
@@ -176,33 +189,6 @@ equation.cpp.s:
 	$(MAKE) -f CMakeFiles/solver.dir/build.make CMakeFiles/solver.dir/equation.cpp.s
 .PHONY : equation.cpp.s
 
-home/chel/labs3/solver_lib/solver.o: home/chel/labs3/solver_lib/solver.cpp.o
-
-.PHONY : home/chel/labs3/solver_lib/solver.o
-
-# target to build an object file
-home/chel/labs3/solver_lib/solver.cpp.o:
-	$(MAKE) -f CMakeFiles/solver.dir/build.make CMakeFiles/solver.dir/home/chel/labs3/solver_lib/solver.cpp.o
-.PHONY : home/chel/labs3/solver_lib/solver.cpp.o
-
-home/chel/labs3/solver_lib/solver.i: home/chel/labs3/solver_lib/solver.cpp.i
-
-.PHONY : home/chel/labs3/solver_lib/solver.i
-
-# target to preprocess a source file
-home/chel/labs3/solver_lib/solver.cpp.i:
-	$(MAKE) -f CMakeFiles/solver.dir/build.make CMakeFiles/solver.dir/home/chel/labs3/solver_lib/solver.cpp.i
-.PHONY : home/chel/labs3/solver_lib/solver.cpp.i
-
-home/chel/labs3/solver_lib/solver.s: home/chel/labs3/solver_lib/solver.cpp.s
-
-.PHONY : home/chel/labs3/solver_lib/solver.s
-
-# target to generate assembly for a file
-home/chel/labs3/solver_lib/solver.cpp.s:
-	$(MAKE) -f CMakeFiles/solver.dir/build.make CMakeFiles/solver.dir/home/chel/labs3/solver_lib/solver.cpp.s
-.PHONY : home/chel/labs3/solver_lib/solver.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -212,14 +198,12 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... solver"
 	@echo "... edit_cache"
-	@echo "... formatter"
-	@echo "... formatter_ex"
+	@echo "... formatter_ex_lib"
+	@echo "... formatter_lib"
+	@echo "... solver_lib"
 	@echo "... equation.o"
 	@echo "... equation.i"
 	@echo "... equation.s"
-	@echo "... home/chel/labs3/solver_lib/solver.o"
-	@echo "... home/chel/labs3/solver_lib/solver.i"
-	@echo "... home/chel/labs3/solver_lib/solver.s"
 .PHONY : help
 
 

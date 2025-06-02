@@ -1,6 +1,5 @@
 file(REMOVE_RECURSE
   "CMakeFiles/solver.dir/equation.cpp.o"
-  "CMakeFiles/solver.dir/home/chel/labs3/solver_lib/solver.cpp.o"
   "solver.pdb"
   "solver"
 )

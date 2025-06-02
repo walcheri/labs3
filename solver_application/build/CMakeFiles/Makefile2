@@ -63,10 +63,12 @@ CMAKE_BINARY_DIR = /home/chel/labs3/solver_application/build
 # Target rules for target CMakeFiles/solver.dir
 
 # All Build rule for target.
-CMakeFiles/solver.dir/all: formatter_ex/CMakeFiles/formatter_ex.dir/all
+CMakeFiles/solver.dir/all: formatter_ex_lib_dir/CMakeFiles/formatter_ex_lib.dir/all
+CMakeFiles/solver.dir/all: formatter_ex_lib_dir/formatter_lib_dir/CMakeFiles/formatter_lib.dir/all
+CMakeFiles/solver.dir/all: solver_lib_dir/CMakeFiles/solver_lib.dir/all
 	$(MAKE) -f CMakeFiles/solver.dir/build.make CMakeFiles/solver.dir/depend
 	$(MAKE) -f CMakeFiles/solver.dir/build.make CMakeFiles/solver.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/chel/labs3/solver_application/build/CMakeFiles --progress-num=5,6,7 "Built target solver"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/chel/labs3/solver_application/build/CMakeFiles --progress-num=5,6 "Built target solver"
 .PHONY : CMakeFiles/solver.dir/all
 
 # Include target in all.
@@ -76,7 +78,7 @@ all: CMakeFiles/solver.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/solver.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/chel/labs3/solver_application/build/CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/chel/labs3/solver_application/build/CMakeFiles 8
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/solver.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/chel/labs3/solver_application/build/CMakeFiles 0
 .PHONY : CMakeFiles/solver.dir/rule
@@ -97,112 +99,169 @@ clean: CMakeFiles/solver.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Directory level rules for directory formatter
+# Directory level rules for directory formatter_ex_lib_dir
 
 # Convenience name for "all" pass in the directory.
-formatter/all: formatter/CMakeFiles/formatter.dir/all
+formatter_ex_lib_dir/all: formatter_ex_lib_dir/CMakeFiles/formatter_ex_lib.dir/all
+formatter_ex_lib_dir/all: formatter_ex_lib_dir/formatter_lib_dir/all
 
-.PHONY : formatter/all
+.PHONY : formatter_ex_lib_dir/all
 
 # Convenience name for "clean" pass in the directory.
-formatter/clean: formatter/CMakeFiles/formatter.dir/clean
+formatter_ex_lib_dir/clean: formatter_ex_lib_dir/CMakeFiles/formatter_ex_lib.dir/clean
+formatter_ex_lib_dir/clean: formatter_ex_lib_dir/formatter_lib_dir/clean
 
-.PHONY : formatter/clean
+.PHONY : formatter_ex_lib_dir/clean
 
 # Convenience name for "preinstall" pass in the directory.
-formatter/preinstall:
+formatter_ex_lib_dir/preinstall: formatter_ex_lib_dir/formatter_lib_dir/preinstall
 
-.PHONY : formatter/preinstall
+.PHONY : formatter_ex_lib_dir/preinstall
 
 #=============================================================================
-# Target rules for target formatter/CMakeFiles/formatter.dir
+# Target rules for target formatter_ex_lib_dir/CMakeFiles/formatter_ex_lib.dir
 
 # All Build rule for target.
-formatter/CMakeFiles/formatter.dir/all:
-	$(MAKE) -f formatter/CMakeFiles/formatter.dir/build.make formatter/CMakeFiles/formatter.dir/depend
-	$(MAKE) -f formatter/CMakeFiles/formatter.dir/build.make formatter/CMakeFiles/formatter.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/chel/labs3/solver_application/build/CMakeFiles --progress-num=1,2 "Built target formatter"
-.PHONY : formatter/CMakeFiles/formatter.dir/all
+formatter_ex_lib_dir/CMakeFiles/formatter_ex_lib.dir/all: formatter_ex_lib_dir/formatter_lib_dir/CMakeFiles/formatter_lib.dir/all
+	$(MAKE) -f formatter_ex_lib_dir/CMakeFiles/formatter_ex_lib.dir/build.make formatter_ex_lib_dir/CMakeFiles/formatter_ex_lib.dir/depend
+	$(MAKE) -f formatter_ex_lib_dir/CMakeFiles/formatter_ex_lib.dir/build.make formatter_ex_lib_dir/CMakeFiles/formatter_ex_lib.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/chel/labs3/solver_application/build/CMakeFiles --progress-num=1,2 "Built target formatter_ex_lib"
+.PHONY : formatter_ex_lib_dir/CMakeFiles/formatter_ex_lib.dir/all
 
 # Include target in all.
-all: formatter/CMakeFiles/formatter.dir/all
+all: formatter_ex_lib_dir/CMakeFiles/formatter_ex_lib.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-formatter/CMakeFiles/formatter.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/chel/labs3/solver_application/build/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 formatter/CMakeFiles/formatter.dir/all
+formatter_ex_lib_dir/CMakeFiles/formatter_ex_lib.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/chel/labs3/solver_application/build/CMakeFiles 4
+	$(MAKE) -f CMakeFiles/Makefile2 formatter_ex_lib_dir/CMakeFiles/formatter_ex_lib.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/chel/labs3/solver_application/build/CMakeFiles 0
-.PHONY : formatter/CMakeFiles/formatter.dir/rule
+.PHONY : formatter_ex_lib_dir/CMakeFiles/formatter_ex_lib.dir/rule
 
 # Convenience name for target.
-formatter: formatter/CMakeFiles/formatter.dir/rule
+formatter_ex_lib: formatter_ex_lib_dir/CMakeFiles/formatter_ex_lib.dir/rule
 
-.PHONY : formatter
-
-# clean rule for target.
-formatter/CMakeFiles/formatter.dir/clean:
-	$(MAKE) -f formatter/CMakeFiles/formatter.dir/build.make formatter/CMakeFiles/formatter.dir/clean
-.PHONY : formatter/CMakeFiles/formatter.dir/clean
+.PHONY : formatter_ex_lib
 
 # clean rule for target.
-clean: formatter/CMakeFiles/formatter.dir/clean
+formatter_ex_lib_dir/CMakeFiles/formatter_ex_lib.dir/clean:
+	$(MAKE) -f formatter_ex_lib_dir/CMakeFiles/formatter_ex_lib.dir/build.make formatter_ex_lib_dir/CMakeFiles/formatter_ex_lib.dir/clean
+.PHONY : formatter_ex_lib_dir/CMakeFiles/formatter_ex_lib.dir/clean
+
+# clean rule for target.
+clean: formatter_ex_lib_dir/CMakeFiles/formatter_ex_lib.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Directory level rules for directory formatter_ex
+# Directory level rules for directory formatter_ex_lib_dir/formatter_lib_dir
 
 # Convenience name for "all" pass in the directory.
-formatter_ex/all: formatter_ex/CMakeFiles/formatter_ex.dir/all
+formatter_ex_lib_dir/formatter_lib_dir/all: formatter_ex_lib_dir/formatter_lib_dir/CMakeFiles/formatter_lib.dir/all
 
-.PHONY : formatter_ex/all
+.PHONY : formatter_ex_lib_dir/formatter_lib_dir/all
 
 # Convenience name for "clean" pass in the directory.
-formatter_ex/clean: formatter_ex/CMakeFiles/formatter_ex.dir/clean
+formatter_ex_lib_dir/formatter_lib_dir/clean: formatter_ex_lib_dir/formatter_lib_dir/CMakeFiles/formatter_lib.dir/clean
 
-.PHONY : formatter_ex/clean
+.PHONY : formatter_ex_lib_dir/formatter_lib_dir/clean
 
 # Convenience name for "preinstall" pass in the directory.
-formatter_ex/preinstall:
+formatter_ex_lib_dir/formatter_lib_dir/preinstall:
 
-.PHONY : formatter_ex/preinstall
+.PHONY : formatter_ex_lib_dir/formatter_lib_dir/preinstall
 
 #=============================================================================
-# Target rules for target formatter_ex/CMakeFiles/formatter_ex.dir
+# Target rules for target formatter_ex_lib_dir/formatter_lib_dir/CMakeFiles/formatter_lib.dir
 
 # All Build rule for target.
-formatter_ex/CMakeFiles/formatter_ex.dir/all:
-	$(MAKE) -f formatter_ex/CMakeFiles/formatter_ex.dir/build.make formatter_ex/CMakeFiles/formatter_ex.dir/depend
-	$(MAKE) -f formatter_ex/CMakeFiles/formatter_ex.dir/build.make formatter_ex/CMakeFiles/formatter_ex.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/chel/labs3/solver_application/build/CMakeFiles --progress-num=3,4 "Built target formatter_ex"
-.PHONY : formatter_ex/CMakeFiles/formatter_ex.dir/all
+formatter_ex_lib_dir/formatter_lib_dir/CMakeFiles/formatter_lib.dir/all:
+	$(MAKE) -f formatter_ex_lib_dir/formatter_lib_dir/CMakeFiles/formatter_lib.dir/build.make formatter_ex_lib_dir/formatter_lib_dir/CMakeFiles/formatter_lib.dir/depend
+	$(MAKE) -f formatter_ex_lib_dir/formatter_lib_dir/CMakeFiles/formatter_lib.dir/build.make formatter_ex_lib_dir/formatter_lib_dir/CMakeFiles/formatter_lib.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/chel/labs3/solver_application/build/CMakeFiles --progress-num=3,4 "Built target formatter_lib"
+.PHONY : formatter_ex_lib_dir/formatter_lib_dir/CMakeFiles/formatter_lib.dir/all
 
 # Include target in all.
-all: formatter_ex/CMakeFiles/formatter_ex.dir/all
+all: formatter_ex_lib_dir/formatter_lib_dir/CMakeFiles/formatter_lib.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-formatter_ex/CMakeFiles/formatter_ex.dir/rule: cmake_check_build_system
+formatter_ex_lib_dir/formatter_lib_dir/CMakeFiles/formatter_lib.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/chel/labs3/solver_application/build/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 formatter_ex/CMakeFiles/formatter_ex.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 formatter_ex_lib_dir/formatter_lib_dir/CMakeFiles/formatter_lib.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/chel/labs3/solver_application/build/CMakeFiles 0
-.PHONY : formatter_ex/CMakeFiles/formatter_ex.dir/rule
+.PHONY : formatter_ex_lib_dir/formatter_lib_dir/CMakeFiles/formatter_lib.dir/rule
 
 # Convenience name for target.
-formatter_ex: formatter_ex/CMakeFiles/formatter_ex.dir/rule
+formatter_lib: formatter_ex_lib_dir/formatter_lib_dir/CMakeFiles/formatter_lib.dir/rule
 
-.PHONY : formatter_ex
-
-# clean rule for target.
-formatter_ex/CMakeFiles/formatter_ex.dir/clean:
-	$(MAKE) -f formatter_ex/CMakeFiles/formatter_ex.dir/build.make formatter_ex/CMakeFiles/formatter_ex.dir/clean
-.PHONY : formatter_ex/CMakeFiles/formatter_ex.dir/clean
+.PHONY : formatter_lib
 
 # clean rule for target.
-clean: formatter_ex/CMakeFiles/formatter_ex.dir/clean
+formatter_ex_lib_dir/formatter_lib_dir/CMakeFiles/formatter_lib.dir/clean:
+	$(MAKE) -f formatter_ex_lib_dir/formatter_lib_dir/CMakeFiles/formatter_lib.dir/build.make formatter_ex_lib_dir/formatter_lib_dir/CMakeFiles/formatter_lib.dir/clean
+.PHONY : formatter_ex_lib_dir/formatter_lib_dir/CMakeFiles/formatter_lib.dir/clean
+
+# clean rule for target.
+clean: formatter_ex_lib_dir/formatter_lib_dir/CMakeFiles/formatter_lib.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory solver_lib_dir
+
+# Convenience name for "all" pass in the directory.
+solver_lib_dir/all: solver_lib_dir/CMakeFiles/solver_lib.dir/all
+
+.PHONY : solver_lib_dir/all
+
+# Convenience name for "clean" pass in the directory.
+solver_lib_dir/clean: solver_lib_dir/CMakeFiles/solver_lib.dir/clean
+
+.PHONY : solver_lib_dir/clean
+
+# Convenience name for "preinstall" pass in the directory.
+solver_lib_dir/preinstall:
+
+.PHONY : solver_lib_dir/preinstall
+
+#=============================================================================
+# Target rules for target solver_lib_dir/CMakeFiles/solver_lib.dir
+
+# All Build rule for target.
+solver_lib_dir/CMakeFiles/solver_lib.dir/all:
+	$(MAKE) -f solver_lib_dir/CMakeFiles/solver_lib.dir/build.make solver_lib_dir/CMakeFiles/solver_lib.dir/depend
+	$(MAKE) -f solver_lib_dir/CMakeFiles/solver_lib.dir/build.make solver_lib_dir/CMakeFiles/solver_lib.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/chel/labs3/solver_application/build/CMakeFiles --progress-num=7,8 "Built target solver_lib"
+.PHONY : solver_lib_dir/CMakeFiles/solver_lib.dir/all
+
+# Include target in all.
+all: solver_lib_dir/CMakeFiles/solver_lib.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+solver_lib_dir/CMakeFiles/solver_lib.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/chel/labs3/solver_application/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 solver_lib_dir/CMakeFiles/solver_lib.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/chel/labs3/solver_application/build/CMakeFiles 0
+.PHONY : solver_lib_dir/CMakeFiles/solver_lib.dir/rule
+
+# Convenience name for target.
+solver_lib: solver_lib_dir/CMakeFiles/solver_lib.dir/rule
+
+.PHONY : solver_lib
+
+# clean rule for target.
+solver_lib_dir/CMakeFiles/solver_lib.dir/clean:
+	$(MAKE) -f solver_lib_dir/CMakeFiles/solver_lib.dir/build.make solver_lib_dir/CMakeFiles/solver_lib.dir/clean
+.PHONY : solver_lib_dir/CMakeFiles/solver_lib.dir/clean
+
+# clean rule for target.
+clean: solver_lib_dir/CMakeFiles/solver_lib.dir/clean
 
 .PHONY : clean
 

@@ -130,7 +130,7 @@ CMAKE_OBJCOPY:FILEPATH=/usr/bin/objcopy
 CMAKE_OBJDUMP:FILEPATH=/usr/bin/objdump
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=formatter
+CMAKE_PROJECT_NAME:STATIC=formatter_lib
 
 //Path to a program.
 CMAKE_RANLIB:FILEPATH=/usr/bin/ranlib
@@ -182,13 +182,13 @@ CMAKE_STRIP:FILEPATH=/usr/bin/strip
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 
 //Value Computed by CMake
-formatter_BINARY_DIR:STATIC=/home/chel/labs3/formatter_lib/build
+formatter_lib_BINARY_DIR:STATIC=/home/chel/labs3/formatter_lib/build
 
 //Dependencies for target
-formatter_LIB_DEPENDS:STATIC=
+formatter_lib_LIB_DEPENDS:STATIC=
 
 //Value Computed by CMake
-formatter_SOURCE_DIR:STATIC=/home/chel/labs3/formatter_lib
+formatter_lib_SOURCE_DIR:STATIC=/home/chel/labs3/formatter_lib
 
 
 ########################

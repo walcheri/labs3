@@ -111,17 +111,30 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named formatter_ex
+# Target rules for targets named formatter_ex_lib
 
 # Build rule for target.
-formatter_ex: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 formatter_ex
-.PHONY : formatter_ex
+formatter_ex_lib: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 formatter_ex_lib
+.PHONY : formatter_ex_lib
 
 # fast build rule for target.
-formatter_ex/fast:
-	$(MAKE) -f CMakeFiles/formatter_ex.dir/build.make CMakeFiles/formatter_ex.dir/build
-.PHONY : formatter_ex/fast
+formatter_ex_lib/fast:
+	$(MAKE) -f CMakeFiles/formatter_ex_lib.dir/build.make CMakeFiles/formatter_ex_lib.dir/build
+.PHONY : formatter_ex_lib/fast
+
+#=============================================================================
+# Target rules for targets named formatter
+
+# Build rule for target.
+formatter: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 formatter
+.PHONY : formatter
+
+# fast build rule for target.
+formatter/fast:
+	$(MAKE) -f formatter_lib_dir/CMakeFiles/formatter.dir/build.make formatter_lib_dir/CMakeFiles/formatter.dir/build
+.PHONY : formatter/fast
 
 formatter_ex.o: formatter_ex.cpp.o
 
@@ -129,7 +142,7 @@ formatter_ex.o: formatter_ex.cpp.o
 
 # target to build an object file
 formatter_ex.cpp.o:
-	$(MAKE) -f CMakeFiles/formatter_ex.dir/build.make CMakeFiles/formatter_ex.dir/formatter_ex.cpp.o
+	$(MAKE) -f CMakeFiles/formatter_ex_lib.dir/build.make CMakeFiles/formatter_ex_lib.dir/formatter_ex.cpp.o
 .PHONY : formatter_ex.cpp.o
 
 formatter_ex.i: formatter_ex.cpp.i
@@ -138,7 +151,7 @@ formatter_ex.i: formatter_ex.cpp.i
 
 # target to preprocess a source file
 formatter_ex.cpp.i:
-	$(MAKE) -f CMakeFiles/formatter_ex.dir/build.make CMakeFiles/formatter_ex.dir/formatter_ex.cpp.i
+	$(MAKE) -f CMakeFiles/formatter_ex_lib.dir/build.make CMakeFiles/formatter_ex_lib.dir/formatter_ex.cpp.i
 .PHONY : formatter_ex.cpp.i
 
 formatter_ex.s: formatter_ex.cpp.s
@@ -147,7 +160,7 @@ formatter_ex.s: formatter_ex.cpp.s
 
 # target to generate assembly for a file
 formatter_ex.cpp.s:
-	$(MAKE) -f CMakeFiles/formatter_ex.dir/build.make CMakeFiles/formatter_ex.dir/formatter_ex.cpp.s
+	$(MAKE) -f CMakeFiles/formatter_ex_lib.dir/build.make CMakeFiles/formatter_ex_lib.dir/formatter_ex.cpp.s
 .PHONY : formatter_ex.cpp.s
 
 # Help Target
@@ -157,8 +170,9 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... rebuild_cache"
-	@echo "... formatter_ex"
+	@echo "... formatter_ex_lib"
 	@echo "... edit_cache"
+	@echo "... formatter"
 	@echo "... formatter_ex.o"
 	@echo "... formatter_ex.i"
 	@echo "... formatter_ex.s"
